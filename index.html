@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4-Wheel Alignment Simulator | Henry Ford Academy | Ford Britain &amp; Ireland</title>
+<meta name="description" content="Learn, measure, inspect and adjust four-wheel alignment - Henry Ford Academy.">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAAzCAMAAAAn4/PyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAI9UExURQAAAAAJWwAIWAALWgAIXAAKWAAJWwAJXAAJXAAJXAAJWxAYZTA3ekBHhFBWjmBmmSAocAAJWwAKWwAIWgAJWwAKWwANWQAJWwAJWxEZZ3B1o4+Tt6+yzL/B1oCErZ+iwQAJWwAHXAALYAAIWgAJWwAJWyAocAAJWwALXAAJXCMrcs/R4N/g6iMrcgAJWwAHXAAQYAAJW////+/w9QAAVRIaZgAJWxIaZgAJWwAKWQAJXAAIWwAIWwAKWwAJXBAYZgAGWQAJXDE4eQAKWwAJWxQdaAAIXAAIWgAJWyIpcAAAYBIbZwAJWgAAAAAIWgAIXAAIWzI5ezE4egAJWwAKXAAIWwAAZgAIWgAIWxMbZwAJWwAJWQAIWwAJWwAKWwAJXP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9H1tCEAAAC/dFJOUwAcIDBANFSLp8Pf///////827ubeEwUcLPs////////5yQYfMf//89Iluj//+mVRRCj//8M5Tje2E1WYpdrd/sob/yDWsxhgO/xCN10AT56t/b8voBDBUTT2qs8XI+fkxhAEAQ4IM9gMFBw54CP75ffr79In6eLgyxcDDyHwxy3NLt8s0xEy/fXx/P7ZOvbFC2dodAWKAnBQv1rCGxUq6LeISrl43tKheInO7ToJl1ibkabk8h0WNOj1Y0CvKZ450wdLgAAAAlwSFlzAAAOwwAADsMBx2+oZAAABh9JREFUaEPtl/eX1FQUx+9iWSENBATTRsGM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">
+<style>
+:root{--navy:#00095B;--dark:#00142E;--blue:#066FEF;--white:#FFFFFF;--grey:#F0F0F0;--ink:#0F0F0F;--ok:#1a7f37;--bad:#c62828}
+*{box-sizing:border-box}
+body{margin:0;font-family:FordAntenna,"Segoe UI",Arial,sans-serif;background:var(--dark);color:var(--white);line-height:1.45}
+header{background:var(--navy);display:flex;align-items:center;gap:18px;padding:12px 20px;border-bottom:4px solid var(--blue)}
+header img{height:51px;width:auto}
+header h1{margin:0;font-size:1.35rem}
+header .hr{margin-left:auto}
+.pill{background:transparent;color:var(--white);border:2px solid var(--white);border-radius:999px;padding:7px 14px;font:inherit;font-weight:700;cursor:pointer;font-size:.85rem}
+.pill:hover{background:var(--blue);border-color:var(--blue)}
+nav{display:flex;flex-wrap:wrap;gap:6px;padding:10px 16px 0;background:var(--navy)}
+nav button{background:rgba(255,255,255,.08);color:var(--white);border:0;border-radius:10px 10px 0 0;padding:11px 20px;font:inherit;font-weight:700;cursor:pointer}
+nav button[aria-selected=true]{background:var(--blue)}
+nav button:hover{background:rgba(255,255,255,.2)}
+main{padding:16px;max-width:1500px;margin:0 auto}
+.card{background:var(--white);color:var(--ink);border-radius:12px;padding:16px 18px;border-top:6px solid var(--blue)}
+.card h2{margin:0 0 6px;color:var(--navy)}
+.card h3{margin:14px 0 4px;color:var(--navy);font-size:1.02rem}
+.card p{margin:5px 0}
+.small{font-size:.82rem;opacity:.8}
+.btn{background:var(--blue);color:var(--white);border:0;border-radius:8px;padding:9px 16px;font:inherit;font-weight:700;cursor:pointer}
+.btn:hover{background:var(--navy)}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.btn.ghost{background:var(--white);color:var(--navy);border:2px solid var(--navy)}
+.btn.ghost:hover{background:var(--grey)}
+.btn.sm{padding:5px 10px;font-size:.82rem}
+.btn.done{background:var(--ok)}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.lgrid{display:grid;grid-template-columns:240px minmax(0,1fr);gap:16px}
+@media(max-width:900px){.lgrid{grid-template-columns:1fr}}
+.lnav{display:flex;flex-direction:column;gap:6px}
+.lnav button{background:var(--white);color:var(--navy);border:2px solid transparent;border-radius:10px;padding:10px 12px;text-align:left;font:inherit;font-weight:700;cursor:pointer}
+.lnav button small{display:block;font-weight:400;color:var(--ink);opacity:.75}
+.lnav button[aria-selected=true]{border-color:var(--blue);background:#E6F0FE}
+.dia svg{width:100%;height:auto;display:block;border:1px solid var(--grey);border-radius:10px}
+.two{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:16px}
+@media(max-width:1000px){.two{grid-template-columns:1fr}}
+.sliders{margin:10px 0}
+.sliders label{display:flex;justify-content:space-between;font-weight:700;color:var(--navy);margin-top:6px;font-size:.9rem}
+.sliders input[type=range]{width:100%;accent-color:var(--blue)}
+.live{background:var(--grey);border-left:6px solid var(--blue);border-radius:8px;padding:10px 14px;margin:10px 0}
+.live b.big{font-size:1.5rem;color:var(--navy);display:block}
+ul.l{margin:4px 0;padding-left:20px}
+ul.l li{margin:3px 0}
+.steps{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.steps span{background:rgba(255,255,255,.12);padding:6px 12px;border-radius:999px;font-size:.82rem;font-weight:700}
+.steps span.on{background:var(--blue)}
+.steps span.past{background:var(--ok)}
+table.rd{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:6px}
+table.rd th{background:var(--navy);color:var(--white);padding:5px 6px;text-align:center}
+table.rd td{border:1px solid #d5d9e2;padding:4px 6px;text-align:center;vertical-align:top}
+table.rd td.rl{background:var(--grey);text-align:left;font-weight:700;color:var(--navy)}
+table.rd td.ok b{color:var(--ok)}
+table.rd td.bad{background:#fdecec}
+table.rd td.bad b{color:var(--bad)}
+.g{display:block;position:relative;height:8px;background:#e1e4ec;border-radius:4px;margin-top:3px}
+.g .b{position:absolute;top:0;bottom:0;background:#9fd8ac;border-radius:4px}
+.g .p{position:absolute;top:-3px;width:4px;height:14px;background:var(--navy);border-radius:2px;margin-left:-2px}
+.row{display:grid;grid-template-columns:minmax(0,1.4fr) auto minmax(0,2fr);gap:8px;align-items:center;border-bottom:1px solid #e2e5ee;padding:5px 0}
+.row .v{font-weight:800;min-width:64px;text-align:center;color:var(--navy)}
+.row .v.bad{color:var(--bad)}.row .v.ok{color:var(--ok)}
+.row .how{font-size:.76rem;opacity:.75}
+.row.na{opacity:.55}
+.ins{border:1px solid #d5d9e2;border-radius:8px;padding:8px 10px;margin:6px 0}
+.ins.bad{border-color:var(--bad);background:#fdecec}
+.ins.ok{border-color:var(--ok);background:#ecf8ef}
+.opt{display:block;width:100%;text-align:left;background:var(--white);color:var(--ink);border:2px solid var(--navy);border-radius:8px;padding:9px 12px;margin:6px 0;font:inherit;cursor:pointer}
+.opt:hover{background:var(--grey)}
+.opt.right{border-color:var(--ok);background:#ecf8ef}
+.opt.wrong{border-color:var(--bad);background:#fdecec}
+.wearbar{display:flex;align-items:center;gap:6px;font-size:.78rem}
+.wearbar i{display:block;height:8px;background:var(--bad);border-radius:4px}
+.wearbar span.t{display:inline-block;width:70px;background:#e1e4ec;border-radius:4px}
+.score{font-size:2.4rem;font-weight:800;color:var(--navy)}
+.warnbox{background:#fff4e0;border-left:6px solid #e08a00;padding:8px 12px;border-radius:6px;margin:8px 0}
+.okbox{background:#ecf8ef;border-left:6px solid var(--ok);padding:8px 12px;border-radius:6px;margin:8px 0}
+footer{padding:14px 20px;font-size:.78rem;opacity:.85;border-top:1px solid rgba(255,255,255,.2);margin-top:16px}
+#toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--navy);color:var(--white);padding:10px 18px;border-radius:999px;opacity:0;pointer-events:none;transition:opacity .25s;z-index:50;border:2px solid var(--blue)}
+#toast.on{opacity:1}
+@media print{body{background:#fff;color:#000}header,nav,footer,.noprint{display:none!important}.card{border:1px solid #999}}
+</style>
+</head>
+<body>
+<header>
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAAzCAMAAAAn4/PyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAI9UExURQAAAAAJWwAIWAALWgAIXAAKWAAJWwAJXAAJXAAJXAAJWxAYZTA3ekBHhFBWjmBmmSAocAAJWwAKWwAIWgAJWwAKWwANWQAJWwAJWxEZZ3B1o4+Tt6+yzL/B1oCErZ+iwQAJWwAHXAALYAAIWgAJWwAJWyAocAAJWwALXAAJXCMrcs/R4N/g6iMrcgAJWwAHXAAQYAAJW////+/w9QAAVRIaZgAJWxIaZgAJWwAKWQAJXAAIWwAIWwAKWwAJXBAYZgAGWQAJXDE4eQAKWwAJWxQdaAAIXAAIWgAJWyIpcAAAYBIbZwAJWgAAAAAIWgAIXAAIWzI5ezE4egAJWwAKXAAIWwAAZgAIWgAIWxMbZwAJWwAJWQAIWwAJWwAKWwAJXP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9H1tCEAAAC/dFJOUwAcIDBANFSLp8Pf///////827ubeEwUcLPs////////5yQYfMf//89Iluj//+mVRRCj//8M5Tje2E1WYpdrd/sob/yDWsxhgO/xCN10AT56t/b8voBDBUTT2qs8XI+fkxhAEAQ4IM9gMFBw54CP75ffr79In6eLgyxcDDyHwxy3NLt8s0xEy/fXx/P7ZOvbFC2dodAWKAnBQv1rCGxUq6LeISrl43tKheInO7ToJl1ibkabk8h0WNOj1Y0CvKZ450wdLgAAAAlwSFlzAAAOwwAADsMBx2+oZAAABh9JREFUaEPtl/eX1FQUx+9iWSENBATTRsGMaEaFG+wFOxbsXVBJlrRhEvJiKC6yu7AsS11siw2wrb1jARt/m+elzMxGRJEzuxzPfn7J5L577/u++25eMgBTTDHFFDld0846O+WcaV3lscml69zu86bPYFiO5wVBEHie42bOOn/2nLkXlD0nga558y9kRUmWFVlSRVEUBEFUVVVWFLkichfNn3dxOWIiWbDwEk5VZElgGe2vVHlVUVTu0oULynETxKLLLpdkKdXGCBVF0eWKyrOZOKZQzKs16YorryrHTgCLl3AVOZfD1hSqs6rqCqJR03UDK81CatRv9tJyfKdZdLUkVwsJekXTqpomKCwtmazXFHHcnjMVacY15QydZe61FaE5P4sqUxE1UWckvl0X3eG8xoJ+3fXlHJ1k6aw2fRqDaEgaawi80maliMjlvzhlxuJylg5yA6u062AlUdINWRTaOo9SNaTm70r1xnKWDtIttmZmVF7TGFZRGI0TWVYTFJ6TqhojqJpca7WiKN5UztJBbuabtWJkmaoQDU6TDFGQRUU3dBQ5Q9YVbGtJib+lnKWDTFtWy7tf45E+zKIhaSpymoCVqo48rxqSJqLc0letLbu1nKWT3HZ7sXsishojGTLDGIqmyTqjGpKuo8FoFYOpqrk+RuHnlHN0ljtYPXtiOURFR4VhZDQY0WCrhqrxrGIwEqpsuvvUSea7yxk6zZ3TpUyiWENDYjRG4BF1ltaQnntoSFjL9XGydNfd5fjOs3j5PaKi0lYs3igMfd+x2R3PamzapqyqqPd2T86H133zZvGSLgnF81KGYXlJlrj7V0zkET2eBx586OFHBFWRK6rAcdVq+mXDMFWWF1VJkSXx0ccef+LJctQEs/ipFUuensnzqlqRZUXRFVmuSKLAznzm2RWLJmdrT0TXylULlz/3fMoLyxeuWnmG/S2Z4oxntbmaXqzs8s/0rDFN07TLZorluM2fnmmNH2zhOl7ZdDJ8TLOaWC+PnJCetUhplO0Uq2UOQgzGD7Zw0SybTsYpClyD6/6+gi2BURCF4wdbnIZAq+EQuvDYfTGJAwtg/QafbKzHmwDgpbi36ZfixnFiA3jx5pe39IFJnMRrCvTRDzBdhLuuP7CBODFJp3FjEqQCvcChFi8eaGxN1vRs6x/0YXs8BABD8UCepcjVFGhFYewgAcAdw4M7cVcPRLv3xHs340YAcOLUvSkwwZggemDivpHB/X4Ykqi180EIPnXsiXF4y4gFCSEhJgABOkkUogl+GAYR+mDizpH+Pbu37hvcjdtfWfsqALz2+htNcRQXSaPRaCToQoMuLUEbEH0AgqMQ4RDAgTd3HYC33n4ndS8EenQ+CyMw0XkXwAltGlEIjBKw6EoP4stp3VNbCF5ILLCowDi0UouJUS8cQtwENh6G997/AD78aEMRkeGnTY+IdYgjz/PqWAfc1wOwF02IxqjLx/gJfPrZ56m7mTl/UadrgBgtE7cB2FQNuIVAnw7GIcCXX32dWSzPJyFkQQmaNhLP8xIavY5G76QLiOEb/Ba+w+9b4rJkzS2OCqV4OO/lyKFjfXsCGFufuZt4xHVdtzdrsQZ6Jo3P6moXAhvo+n6CJoztSu9tEoYRhpAF1dH08qLYJh6icT9kAnv2EdiSTtlGm0AntFKAbl8q0Mm8+8eGcHvmXmxxIw0jdAqX7jWN8AuB+UoT+HGkj94TNC1a0SLItDDJpjJpTa30SKJNHgx7+FMurKBNYFBMUBb4Mx6lm174UTy6qVYYQyqQthNYcR7voWvbth2FcAwP0jgnpMYwD4po4vyoKQkcwKN7yi+M9qfYQSRUU1lg3y/4a+7efIoJxiQKzVygj5g4Ti6wkZ0wAdp9IY6RkaEGxklEVRJ0SETFeYhh7ARlgb/9jn/kEzXZnGyml9H0Uk9iehAme9OBUdhwPHNah8XZlPlR6rFDz8Hc4BEnsJLsVRdkLxGP+NB3ZIdzzIN6TFyXrroex3WbePTIJSSpw2gyCrA/oc9OOtdx2pOnzP6B/BDsNL2byEjeSqdEgsNF2TqLi7v/SwFh9N9+6Zwuq83msT7FFFP8D/gT7XbgJyN9TR4AAAAASUVORK5CYII=" alt="Henry Ford Academy logo" width="160" height="51">
+  <h1>4-Wheel Alignment Simulator</h1>
+  <div class="hr"><button class="pill" id="dmBtn" data-act="dm" type="button">Angles: decimal degrees</button></div>
+</header>
+<nav id="tabs" role="tablist" aria-label="Sections"></nav>
+<main id="main"></main>
+<footer><b>Henry Ford Academy &middot; Ford Britain &amp; Ireland.</b> Training simulation only. All angles, tolerances and procedures shown are illustrative training values &mdash; always use the current Ford workshop manual / official service information for real specifications and procedures. Drawings exaggerate angles for clarity.</footer>
+<div id="toast" role="status"></div>
+<script>
+(function(){
+'use strict';
+const $=q=>document.querySelector(q);
+const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
+const rad=d=>d*Math.PI/180;
+const r2=v=>Math.round(v*100)/100;
+const rnd=(a,b)=>a+Math.random()*(b-a);
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));const t=a[i];a[i]=a[j];a[j]=t}return a};
+const NAVY='#00095B',BLUE='#066FEF',INK='#0F0F0F',GREY='#F0F0F0',RED='#c62828',GRN='#1a7f37';
+const ST={tab:'learn',dm:false,topic:'camber',tv:{},veh:'hatch',kind:'rand',quiz:null};
+let W=null,SB=null,toastT=null;
+
+/* ---------- vehicle data (illustrative training values) ---------- */
+const VEH={
+ hatch:{name:'Hatchback \u2013 strut front, multi-link rear',
+  adj:{fToe:1,fCam:1,fCas:0,rCam:1,rToe:1},
+  sp:{fCam:[-0.5,0.75],fCas:[4.0,1.0],fToe:[0.05,0.10],sai:[12.5,1.0],rCam:[-1.0,0.75],rToe:[0.10,0.10]},
+  how:{fToe:'Turn the tie-rod adjuster (release the lock nut first)',fCam:'Eccentric bolt / slotted hole at the strut-to-knuckle joint',fCas:'Not adjustable on this vehicle',rCam:'Eccentric cam bolt on the rear lateral link',rToe:'Eccentric cam on the rear toe link'}},
+ suv:{name:'SUV \u2013 double wishbone front, multi-link rear',
+  adj:{fToe:1,fCam:1,fCas:1,rCam:0,rToe:1},
+  sp:{fCam:[-0.4,0.75],fCas:[5.5,1.0],fToe:[0.05,0.10],sai:[13.0,1.0],rCam:[-0.6,0.75],rToe:[0.08,0.10]},
+  how:{fToe:'Turn the tie-rod adjuster sleeve',fCam:'Upper control arm cam / shims',fCas:'Upper control arm cam (moves the arm fore / aft)',rCam:'Not adjustable on this vehicle',rToe:'Eccentric cam on the rear toe link'}}
+};
+const WH=['FL','FR','RL','RR'];
+const WN={FL:'Front left',FR:'Front right',RL:'Rear left',RR:'Rear right'};
+
+function specCar(vk){const s=VEH[vk].sp;const f=()=>({cam:s.fCam[0],toe:s.fToe[0],cas:s.fCas[0],sai:s.sai[0]});const r=()=>({cam:s.rCam[0],toe:s.rToe[0]});return{v:vk,FL:f(),FR:f(),RL:r(),RR:r()}}
+function derive(c){
+ const th=(c.RL.toe-c.RR.toe)/2;
+ const toe={FL:c.FL.toe-th,FR:c.FR.toe+th,RL:c.RL.toe,RR:c.RR.toe};
+ const mean=(toe.FL-toe.FR)/2;
+ return{thrust:th,toe,mean,sw:-mean*16,cc:c.FL.cam-c.FR.cam,cs:c.FL.cas-c.FR.cas,
+  pull:(c.FR.cam-c.FL.cam)+(c.FL.cas-c.FR.cas)*0.6+th*2,tf:toe.FL+toe.FR,tr:toe.RL+toe.RR};
+}
+function evalCar(c){
+ const s=VEH[c.v].sp,d=derive(c),iss=[];
+ const chk=(n,v,sp)=>{if(Math.abs(v-sp[0])>sp[1]+1e-9)iss.push(n)};
+ ['FL','FR'].forEach(w=>{chk(w+' camber',c[w].cam,s.fCam);chk(w+' caster',c[w].cas,s.fCas);chk(w+' SAI',c[w].sai,s.sai);chk(w+' toe',d.toe[w],s.fToe)});
+ ['RL','RR'].forEach(w=>{chk(w+' camber',c[w].cam,s.rCam);chk(w+' toe',d.toe[w],s.rToe)});
+ if(Math.abs(d.cc)>0.75+1e-9)iss.push('cross camber');
+ if(Math.abs(d.cs)>0.75+1e-9)iss.push('cross caster');
+ if(Math.abs(d.thrust)>0.15+1e-9)iss.push('thrust angle');
+ if(Math.abs(d.sw)>2+1e-9)iss.push('steering wheel');
+ return iss;
+}
+function wearOf(c){
+ const s=VEH[c.v].sp,d=derive(c),o={};
+ [['FL',s.fCam,s.fToe],['FR',s.fCam,s.fToe],['RL',s.rCam,s.rToe],['RR',s.rCam,s.rToe]].forEach(a=>{
+  const w=a[0],ce=c[w].cam-a[1][0],te=d.toe[w]-a[2][0];
+  o[w]={inn:clamp((Math.max(0,-ce-a[1][1]*.4)+2*Math.max(0,-te-a[2][1]*.4))*50,0,100),out:clamp((Math.max(0,ce-a[1][1]*.4)+2*Math.max(0,te-a[2][1]*.4))*50,0,100),feather:Math.abs(te)>a[2][1]};
+ });
+ return o;
+}
+function fa(v,sign){
+ if(!ST.dm){let s=v.toFixed(2);if(/^-0\.00$/.test(s))s='0.00';return (sign!==false&&v>0.004?'+':'')+s+'\u00b0'}
+ const a=Math.abs(v);let d=Math.floor(a),m=Math.round((a-d)*60);if(m===60){d++;m=0}
+ return ((d||m)?(v<0?'-':(sign!==false?'+':'')):'')+d+'\u00b0'+String(m).padStart(2,'0')+'\u2032';
+}
+function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('on'),2200)}
+
+/* ---------- svg helpers ---------- */
+const sl=(x1,y1,x2,y2,c,w,d)=>`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${c||INK}" stroke-width="${w||2}"${d?` stroke-dasharray="${d}"`:''}/>`;
+const ar=(x1,y1,x2,y2,c)=>`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${c||RED}" stroke-width="4" marker-end="url(#ah)"/>`;
+const sr=(x,y,w,h,f,s,rx)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${f}" stroke="${s||'none'}" stroke-width="1.5"${rx?` rx="${rx}"`:''}/>`;
+const sc=(x,y,r,f,s)=>`<circle cx="${x}" cy="${y}" r="${r}" fill="${f}" stroke="${s||'none'}" stroke-width="1.5"/>`;
+const st=(t,x,y,o)=>{o=o||{};return `<text x="${x}" y="${y}" text-anchor="${o.a||'middle'}" font-size="${o.s||15}" font-weight="${o.w||700}" fill="${o.c||NAVY}">${t}</text>`};
+const sg=(tr,inner)=>`<g transform="${tr}">${inner}</g>`;
+const DEFS=`<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="${RED}"/></marker></defs>`;
+const svgw=(inner,vb)=>`<svg viewBox="${vb||'0 0 640 360'}" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,Arial,sans-serif">${DEFS}<rect width="100%" height="100%" fill="#fff"/>${inner}</svg>`;
+const TYRE='#2b2b2b',RIM='#cfd6e4';
+
+/* ---------- LEARN: diagrams ---------- */
+const DRAW={};
+DRAW.camber=v=>{
+ const a=v.v*2.5,Wd=70,H=170;let o=sr(0,300,640,60,'#e9ecf3')+sl(0,300,640,300,INK,3);
+ o+=sr(262,70,116,120,NAVY,null,10)+st('VEHICLE',320,135,{c:'#fff',s:14})+sl(320,40,320,320,BLUE,1.5,'6 5');
+ [[170,-1],[470,1]].forEach(p=>{const cx=p[0],s=p[1],th=s*a;
+  o+=sl(cx,50,cx,320,BLUE,1.5,'6 5');
+  o+=sg(`rotate(${th} ${cx} 300)`,sr(cx-Wd/2,300-H,Wd,H,TYRE,INK,10)+sr(cx-Wd/2+12,300-H+24,Wd-24,H-48,RIM,INK,6));
+  const hx=cx+85*Math.sin(rad(th)),hy=300-85*Math.cos(rad(th));
+  o+=sl(s>0?378:262,150,hx,hy,INK,5)+sc(hx,hy,7,GREY,INK);
+  const outer=clamp(.5+.12*v.v,.08,.92),inner=1-outer;
+  const loadL=s>0?inner:outer,loadR=s>0?outer:inner;
+  o+=sr(cx-Wd/2,306,Wd/2,10,`rgba(198,40,40,${loadL.toFixed(2)})`,'#999')+sr(cx,306,Wd/2,10,`rgba(198,40,40,${loadR.toFixed(2)})`,'#999');
+ });
+ o+=st('Vertical reference',320,34,{c:BLUE,s:13})+st('Tyre contact pressure',320,342,{c:INK,s:12,w:400});
+ o+=st('Angles exaggerated \u00d72.5 for clarity',100,20,{c:INK,s:12,w:400});
+ return o;
+};
+DRAW.caster=v=>{
+ const a=v.v*2,t=Math.tan(rad(a));let o=sr(0,300,640,60,'#e9ecf3')+sl(0,300,640,300,INK,3);
+ o+=sc(320,190,110,TYRE,INK)+sc(320,190,70,RIM,INK)+sc(320,190,10,GREY,INK);
+ const xt=320-(190-50)*t,xb=320+(300-190)*t,xe=320+(320-190)*t;
+ o+=sl(xt,50,xe,320,RED,4);
+ o+=sl(xt,50,xt,140,BLUE,1.5,'6 5')+st(fa(v.v),xt-8,40,{a:'end',c:RED,s:15});
+ o+=sc(320,300,6,BLUE)+sc(xb,300,6,RED);
+ o+=sl(320,325,xb,325,INK,3)+st('Trail',(320+xb)/2,345,{c:INK,s:13});
+ o+=ar(470,110,590,110,BLUE);
+ o+=st('Direction of travel',530,95,{c:BLUE,s:13})+st('Steering axis',xt+100,60,{c:RED,s:13,a:'start'});
+ o+=st('Angle \u00d72',60,30,{c:INK,s:12,w:400});
+ return o;
+};
+DRAW.toe=v=>{
+ const a=v.v*8,cx1=200,cx2=440,cy=190,w=40,h=120;let o=sl(320,40,320,340,BLUE,1.5,'6 5');
+ o+=sg(`rotate(${a} ${cx1} ${cy})`,sr(cx1-w/2,cy-h/2,w,h,TYRE,INK,8)+sr(cx1-w/2+8,cy-h/2+14,w-16,h-28,RIM,INK,4));
+ o+=sg(`rotate(${-a} ${cx2} ${cy})`,sr(cx2-w/2,cy-h/2,w,h,TYRE,INK,8)+sr(cx2-w/2+8,cy-h/2+14,w-16,h-28,RIM,INK,4));
+ const s=Math.sin(rad(a)),c=Math.cos(rad(a));
+ o+=sl(cx1,cy,cx1+230*s,cy-230*c,RED,2,'8 6')+sl(cx2,cy,cx2-230*s,cy-230*c,RED,2,'8 6');
+ const fx1=cx1+20*c+60*s,fy=cy-60,rx1=cx1+20*c-60*s,ry=cy+60,fx2=cx2-20*c-60*s,rx2=cx2-20*c+60*s;
+ o+=sl(fx1,fy-12,fx2,fy-12,NAVY,2)+st('A (front)',320,fy-20,{c:NAVY,s:13})+sl(rx1,ry+12,rx2,ry+12,NAVY,2)+st('B (rear)',320,ry+34,{c:NAVY,s:13});
+ o+=st('FRONT \u2191',320,24,{c:INK,s:13})+st('Angle \u00d78 for clarity',90,340,{c:INK,s:12,w:400});
+ return o;
+};
+DRAW.sai=v=>{
+ const a=v.v,t=Math.tan(rad(a)),x0=405;let o=sr(0,300,640,60,'#e9ecf3')+sl(0,300,640,300,INK,3);
+ o+=sl(200,20,200,320,BLUE,1.5,'6 5')+st('Vehicle centreline',200,14,{c:BLUE,s:12});
+ o+=sr(120,70,160,70,NAVY,null,8)+sl(280,105,420,200,INK,6);
+ o+=sr(385,130,70,170,TYRE,INK,10)+sr(397,154,46,122,RIM,INK,6)+sc(420,200,8,GREY,INK);
+ const xt=x0-(300-50)*t;
+ o+=sl(x0,50,x0,320,BLUE,1.5,'6 5')+sl(xt,50,x0,300,RED,4)+sc(x0,300,6,RED);
+ o+=st(fa(v.v,false),xt+4,40,{a:'start',c:RED,s:16})+st('Steering axis',xt-8,75,{a:'end',c:RED,s:13});
+ return o;
+};
+DRAW.included=v=>{
+ const cam=v.cam,sai=v.sai,t=Math.tan(rad(sai)),x0=405;let o=sr(0,300,640,60,'#e9ecf3')+sl(0,300,640,300,INK,3);
+ o+=sr(120,70,160,70,NAVY,null,8)+sl(280,105,420,200,INK,6);
+ o+=sl(x0,50,x0,320,BLUE,1.5,'6 5');
+ o+=sg(`rotate(${cam} 420 300)`,sr(385,130,70,170,TYRE,INK,10)+sr(397,154,46,122,RIM,INK,6)+sl(420,90,420,300,'#fff',2,'6 5'));
+ const xt=x0-(300-50)*t;
+ o+=sl(xt,50,x0,300,RED,4)+sc(x0,300,6,RED);
+ o+=st('SAI '+fa(sai,false),xt-6,36,{a:'end',c:RED,s:15})+st('Camber '+fa(cam),500,100,{a:'start',c:BLUE,s:15});
+ o+=st('Included angle = '+fa(sai+cam,false),320,345,{c:NAVY,s:17});
+ return o;
+};
+DRAW.scrub=v=>{
+ const s_=v.v,x0=420-s_*2.2,t=Math.tan(rad(10));let o=sr(0,300,640,60,'#e9ecf3')+sl(0,300,640,300,INK,3);
+ o+=sr(100,70,150,70,NAVY,null,8)+sl(250,105,420,200,INK,6);
+ o+=sr(385,130,70,170,TYRE,INK,10)+sr(397,154,46,122,RIM,INK,6)+sc(420,200,8,GREY,INK);
+ o+=sl(420,60,420,320,BLUE,1.5,'6 5')+st('Tyre centre line',420,48,{c:BLUE,s:12});
+ o+=sl(x0-250*t,50,x0,300,RED,4)+sc(x0,300,6,RED)+sc(420,300,6,BLUE);
+ o+=sl(Math.min(x0,420),328,Math.max(x0,420),328,INK,4)+st('Scrub radius '+Math.round(s_)+' mm',(x0+420)/2,350,{c:INK,s:14});
+ o+=st(s_>0?'Axis meets ground INSIDE the tyre centre (positive)':(s_<0?'Axis meets ground OUTSIDE the tyre centre (negative)':'Zero scrub'),320,24,{c:RED,s:14});
+ return o;
+};
+function carTop(){return sr(235,60,170,290,'#dfe4ef',INK,40)+sl(320,20,320,370,BLUE,1.5,'6 5')}
+DRAW.thrust=v=>{
+ const a=v.v*10;let o=carTop();
+ [[245,80],[395,80]].forEach(p=>{o+=sr(p[0]-13,p[1]-30,26,60,TYRE,INK,5)});
+ o+=sl(245,80,395,80,'#999',2,'5 4');
+ o+=sg(`rotate(${a} 320 300)`,sl(245,300,395,300,'#999',2,'5 4')+sr(232,270,26,60,TYRE,INK,5)+sr(382,270,26,60,TYRE,INK,5));
+ const e=[320+250*Math.sin(rad(a)),300-250*Math.cos(rad(a))];
+ o+=ar(320,300,e[0],e[1],RED);
+ o+=st('Thrust line',e[0]+(a>=0?10:-10),e[1]+16,{a:a>=0?'start':'end',c:RED,s:14})+st('Geometric centreline',320,14,{c:BLUE,s:13});
+ o+=st('Thrust angle '+fa(v.v),470,200,{a:'start',c:NAVY,s:16})+st('Angle \u00d710',70,350,{c:INK,s:12,w:400});
+ return o;
+};
+DRAW.setback=v=>{
+ const sb=v.v,off=sb*2.5;let o=carTop();
+ o+=sr(232,80-30,26,60,TYRE,INK,5)+sr(382,80+off-30,26,60,TYRE,INK,5);
+ o+=sl(245,80,395,80+off,RED,3)+sl(245,80,395,80,'#999',2,'5 4');
+ o+=sr(232,270,26,60,TYRE,INK,5)+sr(382,270,26,60,TYRE,INK,5);
+ o+=st('Setback '+Math.round(sb)+' mm',450,200,{a:'start',c:NAVY,s:16})+st('(right wheel set back when positive)',450,222,{a:'start',c:INK,s:12,w:400});
+ o+=st('Front axle skewed',320,50,{c:RED,s:13});
+ return o;
+};
+DRAW.turn=v=>{
+ const L=2.7,T=1.55,d=rad(v.v),R=L/Math.tan(d),inn=Math.atan(L/(R-T/2)),out=Math.atan(L/(R+T/2));
+ const k=70,rx=320,ry=300,fy=ry-L*k,wl=rx-T/2*k,wr=rx+T/2*k;let o=sr(rx-65,fy-30,130,L*k+80,'#dfe4ef',INK,30);
+ o+=sl(0,ry,640,ry,'#999',2,'6 5');
+ [[wl,inn],[wr,out]].forEach(p=>{const al=p[1];o+=sg(`rotate(${-al*180/Math.PI} ${p[0]} ${fy})`,sr(p[0]-12,fy-30,24,60,TYRE,INK,5));
+  o+=sl(p[0],fy,p[0]-300*Math.cos(al),fy+300*Math.sin(al),RED,1.8,'7 5');});
+ o+=sr(wl-12,ry-30,24,60,TYRE,INK,5)+sr(wr-12,ry-30,24,60,TYRE,INK,5);
+ o+=st('Inner wheel '+(inn*180/Math.PI).toFixed(1)+'\u00b0',470,60,{c:RED,s:15,a:'start'})+st('Outer wheel '+(out*180/Math.PI).toFixed(1)+'\u00b0',470,82,{c:NAVY,s:15,a:'start'});
+ o+=st('Rear axle line',630,ry-8,{a:'end',c:INK,s:12,w:400});
+ return o;
+};
+const INFO={};
+INFO.camber=v=>{const x=v.v;return `<b class="big">${fa(x)}</b>${x>0.05?'<b>Positive</b> camber \u2013 top of the wheel leans outwards. Loads the <b>outer</b> shoulder of the tyre.':(x<-0.05?'<b>Negative</b> camber \u2013 top of the wheel leans inwards. Loads the <b>inner</b> shoulder; improves cornering grip.':'Zero camber \u2013 even load across the tread in a straight line.')}${Math.abs(x)>1.5?'<br><span class="small">Large values wear the tyre shoulder quickly.</span>':''}`};
+INFO.caster=v=>{const x=v.v,tr=Math.round(330*Math.tan(rad(x)));return `<b class="big">${fa(x)}</b>Approximate mechanical trail \u2248 <b>${tr} mm</b> (the tyre contact patch ${tr>0?'trails behind':'sits ahead of'} the point where the steering axis meets the road).${x>=2?'<br>Positive caster \u2192 good straight-line stability and the steering <b>self-centres</b>.':'<br>Low or negative caster \u2192 light, wandering steering with poor self-centring.'}${x>7?'<br><span class="small">High caster makes steering heavy.</span>':''}`};
+INFO.toe=v=>{const x=v.v,mm=(430*Math.sin(rad(2*x))).toFixed(1);return `<b class="big">${fa(x)} per wheel</b>Total toe = <b>${fa(2*x)}</b> \u2248 <b>${mm} mm</b> (B \u2212 A, rim diameter 430 mm).<br>${x>0.01?'<b>Toe-in</b>: fronts of the tyres point towards each other. Excess \u2192 wear on the <b>outer</b> edges, feathering.':(x<-0.01?'<b>Toe-out</b>: fronts point apart. Excess \u2192 wear on the <b>inner</b> edges, twitchy steering.':'Zero toe \u2013 wheels parallel.')}`};
+INFO.sai=v=>`<b class="big">${fa(v.v,false)}</b>The steering axis tilts inwards at the top. SAI (also called KPI) gives the <b>self-centring</b> effect that returns the wheel to straight ahead. It is set by the suspension geometry and is <b>not adjustable</b>.`;
+INFO.included=v=>{const inc=v.sai+v.cam;return `<b class="big">${fa(inc,false)}</b>Included angle = SAI + camber. It does not change when you adjust camber, so it is a diagnostic: if camber is out but the included angle is <b>correct</b>, adjust camber. If the included angle is <b>wrong</b>, a strut, knuckle or arm is <b>bent</b> and must be replaced.`};
+INFO.scrub=v=>`<b class="big">${Math.round(v.v)} mm</b>${v.v>0?'<b>Positive scrub</b>: more steering feedback and a tendency to pull on uneven braking.':(v.v<0?'<b>Negative scrub</b>: stabilises the car under braking and is used on most front-wheel-drive cars.':'Zero scrub.')} Scrub radius is set by wheel offset and suspension design \u2013 wrong wheels change it.`;
+INFO.thrust=v=>{const x=v.v;return `<b class="big">${fa(x)}</b>${Math.abs(x)<0.05?'The rear axle points along the centreline \u2013 car tracks straight.':`The rear axle pushes the car ${x>0?'to the <b>right</b>':'to the <b>left</b>'} of the centreline. The driver has to steer against it, so the steering wheel sits off-centre and tyres wear.`} Correct it by adjusting the <b>rear toe</b>. Front toe is measured relative to this line.`};
+INFO.setback=v=>{const a=Math.atan(v.v/1550)*180/Math.PI;return `<b class="big">${Math.round(v.v)} mm</b>Equivalent angle \u2248 <b>${fa(a)}</b>. One front wheel is further back than the other \u2013 usually from <b>collision damage</b> or a shifted subframe. It cannot be adjusted away. Typical limit around \u00b110 mm.`};
+INFO.turn=v=>{const L=2.7,T=1.55,R=L/Math.tan(rad(v.v)),i=Math.atan(L/(R-T/2))*180/Math.PI,o=Math.atan(L/(R+T/2))*180/Math.PI;return `<b class="big">${(i-o).toFixed(1)}\u00b0 difference</b>The inside wheel turns <b>${i.toFixed(1)}\u00b0</b> and the outside wheel <b>${o.toFixed(1)}\u00b0</b>. This \u201ctoe-out on turns\u201d (Ackermann geometry) lets all four wheels follow circles around the same centre. A low or missing difference \u2192 tyre scrub in tight turns; usually a <b>bent steering arm</b>.`};
+
+const TOPICS=[
+ {id:'camber',name:'Camber',sub:'Wheel tilt \u2013 front view',sl:[{k:'v',label:'Camber',min:-4,max:4,step:.1,val:-1}],
+  what:'Camber is the inward or outward tilt of the wheel seen from the front. Top of the wheel tilted <b>outwards</b> = <b>positive</b>; tilted <b>inwards</b> = <b>negative</b>.',
+  why:'It decides how the tread meets the road. A little negative camber helps cornering, but too much or too little loads one shoulder of the tyre.',
+  wrong:['Too much <b>negative</b> camber \u2192 wear on the <b>inner</b> shoulder','Too much <b>positive</b> camber \u2192 wear on the <b>outer</b> shoulder','Different left / right \u2192 the car <b>pulls towards the side with more positive camber</b>'],
+  fix:'Eccentric (cam) bolts, slotted strut-to-knuckle holes, shims or adjustable arms \u2013 depends on the suspension. Many rear axles are not adjustable.',spec:'Typical front: about \u22120.5\u00b0 \u00b1 0.75\u00b0. Cross-camber (left minus right) should stay within 0.75\u00b0.'},
+ {id:'caster',name:'Caster',sub:'Steering axis tilt \u2013 side view',sl:[{k:'v',label:'Caster',min:-2,max:8,step:.1,val:4}],
+  what:'Caster is the forward or backward tilt of the steering axis seen from the side. Top of the axis tilted <b>rearwards</b> = <b>positive</b> caster \u2013 like the front forks of a bicycle or a shopping-trolley castor.',
+  why:'It gives straight-line stability and makes the steering return to centre after a turn. It also makes the outside wheel gain negative camber in corners.',
+  wrong:['Too little caster \u2192 wandering, light steering, poor return','Too much caster \u2192 heavy steering','Different left / right \u2192 the car <b>pulls towards the side with <u>less</u> positive caster</b>'],
+  fix:'On some vehicles by a cam on the upper arm, strut-top mount slots or adjustable rods; on many cars it is <b>not adjustable</b>. If it is out and cannot be adjusted, look for damage.',spec:'Typical: +3\u00b0 to +6\u00b0. Measured by turning the steered wheels \u00b120\u00b0 (the \u201ccaster sweep\u201d).'},
+ {id:'toe',name:'Toe',sub:'Wheels pointing in or out \u2013 top view',sl:[{k:'v',label:'Toe per wheel',min:-1,max:1,step:.05,val:.1}],
+  what:'Toe is how much the wheels point towards (<b>toe-in</b>) or away from (<b>toe-out</b>) each other, seen from above. It is the most critical angle for tyre wear.',
+  why:'Wheels that are not parallel are dragged sideways along the road. Front toe-in keeps the car stable; the exact value is a compromise for the suspension.',
+  wrong:['Too much toe-in \u2192 wear on the <b>outer</b> edges, feathered tread','Too much toe-out \u2192 wear on the <b>inner</b> edges, twitchy steering','Unequal left / right front toe \u2192 <b>steering wheel off-centre</b>, even if the total toe is correct'],
+  fix:'Front: tie-rod length. Rear: eccentric cam or toe link. Always adjust toe <b>last</b> because camber and caster changes also move it.',spec:'Typical: total front toe about +0.10\u00b0 \u00b1 0.20\u00b0 (about 0 to 2 mm).'},
+ {id:'sai',name:'SAI / KPI',sub:'Steering axis inclination \u2013 front view',sl:[{k:'v',label:'SAI',min:4,max:18,step:.1,val:12.5}],
+  what:'The steering axis inclination (SAI, also called king-pin inclination) is the inward tilt of the steering axis seen from the front.',
+  why:'It lifts the car slightly as the wheel is steered, which produces a force that pulls the steering back to straight ahead. It also sets the scrub radius.',
+  wrong:['Reading out of specification \u2192 <b>bent</b> strut, knuckle, spindle or subframe','Different left / right \u2192 pulls and uneven steering return'],
+  fix:'<b>Not adjustable.</b> A wrong value always points to a damaged or incorrectly fitted part.',spec:'Typical: 11\u00b0 \u2013 16\u00b0. Measured during the caster sweep.'},
+ {id:'included',name:'Included angle',sub:'SAI + camber \u2013 front view',sl:[{k:'cam',label:'Camber',min:-3,max:3,step:.1,val:-.5},{k:'sai',label:'SAI',min:6,max:18,step:.1,val:12.5}],
+  what:'Included angle is the <b>SAI plus the camber</b> of the same wheel. Changing camber moves the steering axis and wheel together, so the included angle stays the same.',
+  why:'It is the quickest damage check: camber and caster can be adjusted, the included angle cannot.',
+  wrong:['Camber out, included angle <b>correct</b> \u2192 just adjust camber','Camber out <b>and</b> included angle out \u2192 bent part \u2013 replace it (adjusting will not cure it)'],
+  fix:'None \u2013 diagnostic only.',spec:'Compare with the manufacturer\u2019s included-angle figure.'},
+ {id:'scrub',name:'Scrub radius',sub:'Steering axis meets the ground',sl:[{k:'v',label:'Scrub radius (mm)',min:-40,max:80,step:1,val:10}],
+  what:'The distance on the road between the centre of the tyre contact patch and the point where the steering axis meets the ground. Positive when the axis meets the ground <b>inside</b> the tyre centre.',
+  why:'It controls how braking and tyre forces try to steer the wheels, and the steering effort when parking.',
+  wrong:['Large positive scrub \u2192 kickback, pulling when braking on uneven grip','Large negative scrub \u2192 stable under braking but heavy feel','Wrong wheel offset or tyre size changes scrub'],
+  fix:'Not adjustable. Fit the correct wheels and tyres.',spec:'Set by the design \u2013 check the workshop manual.'},
+ {id:'thrust',name:'Thrust angle',sub:'Where the rear axle points \u2013 top view',sl:[{k:'v',label:'Thrust angle',min:-1,max:1,step:.05,val:.3}],
+  what:'The thrust angle is the direction the rear axle pushes the car, compared with the geometric centreline. It comes from the <b>rear toe</b> of the two wheels: (left rear toe \u2212 right rear toe) \u00f7 2.',
+  why:'The car travels along the thrust line. If it is off, the driver steers against it \u2013 the steering wheel is off-centre and the car may \u201ccrab\u201d.',
+  wrong:['Steering wheel off-centre but car drives straight','Car feels like it drifts to one side; front tyre wear','Front toe readings appear wrong when referenced to the thrust line'],
+  fix:'Adjust the <b>rear toe</b> on each wheel so that they are equal. Always do the rear axle first.',spec:'Typical limit: \u00b10.15\u00b0 or better.'},
+ {id:'setback',name:'Setback',sub:'Wheel positions \u2013 top view',sl:[{k:'v',label:'Setback (mm)',min:-30,max:30,step:1,val:12}],
+  what:'Setback is how far one front (or rear) wheel sits behind the other on the same axle, measured along the car.',
+  why:'Setback shows the axle is skewed. It nearly always means collision damage or a shifted subframe.',
+  wrong:['Car pulls or the steering wheel is off-centre that cannot be adjusted away','Wheelbase is different left to right'],
+  fix:'Cannot be adjusted \u2013 the structure needs repair.',spec:'Typical limit around \u00b110 mm.'},
+ {id:'turn',name:'Turning angle',sub:'Toe-out on turns',sl:[{k:'v',label:'Steering angle (centre)',min:3,max:35,step:.5,val:15}],
+  what:'When turning, the inside front wheel must turn more than the outside wheel because it travels on a smaller circle. This difference is the <b>turning angle</b> or <b>toe-out on turns</b> (Ackermann geometry).',
+  why:'It lets all four wheels roll around one centre so the tyres do not scrub.',
+  wrong:['Wrong difference \u2192 squealing tyres and wear in tight turns','Typically caused by a <b>bent steering arm</b> or tie-rod'],
+  fix:'Not adjustable \u2013 measured at \u00b120\u00b0 turns. Replace bent steering parts.',spec:'Manufacturer figure for a given steering angle.'}
+];
+function topicVals(t){const v={};t.sl.forEach(s=>{v[s.k]=ST.tv[t.id+s.k]!==undefined?ST.tv[t.id+s.k]:s.val});return v}
+
+/* ---------- LEARN tab ---------- */
+function renderLearn(){
+ const t=TOPICS.find(x=>x.id===ST.topic),v=topicVals(t);
+ const h=`<div class="lgrid"><div class="lnav">${TOPICS.map(x=>`<button data-act="topic" data-v="${x.id}" aria-selected="${x.id===t.id}">${x.name}<small>${x.sub}</small></button>`).join('')}</div>
+ <div class="card"><h2>${t.name}</h2><div class="two"><div><div class="dia" id="lDraw">${svgw(DRAW[t.id](v))}</div>
+ <div class="sliders">${t.sl.map(s=>`<label>${s.label}<span id="lv_${s.k}">${v[s.k]}</span></label><input type="range" data-sl="${s.k}" min="${s.min}" max="${s.max}" step="${s.step}" value="${v[s.k]}" aria-label="${s.label}">`).join('')}</div>
+ <div class="live" id="lInfo">${INFO[t.id](v)}</div></div>
+ <div><h3>What is it?</h3><p>${t.what}</p><h3>Why it matters</h3><p>${t.why}</p><h3>If it is wrong</h3><ul class="l">${t.wrong.map(x=>`<li>${x}</li>`).join('')}</ul><h3>How it is corrected</h3><p>${t.fix}</p><h3>Typical figures</h3><p>${t.spec}</p><p class="small">Training values only \u2013 use the current Ford workshop manual for real specifications.</p></div></div>
+ <div class="btns noprint"><button class="btn" data-act="tab" data-v="shop">Practise on the alignment rack \u2192</button></div></div></div>`;
+ $('#main').innerHTML=h;
+}
+function learnUpdate(){
+ const t=TOPICS.find(x=>x.id===ST.topic),v=topicVals(t);
+ $('#lDraw').innerHTML=svgw(DRAW[t.id](v));$('#lInfo').innerHTML=INFO[t.id](v);
+ t.sl.forEach(s=>{const e=$('#lv_'+s.k);if(e)e.textContent=v[s.k]});
+}
+
+/* ---------- vehicle drawings (shop + sandbox) ---------- */
+function statusOf(c,w){
+ const s=VEH[c.v].sp,d=derive(c),fr=w[0]==='F';
+ const ok=(v,sp)=>Math.abs(v-sp[0])<=sp[1]+1e-9;
+ let g=ok(c[w].cam,fr?s.fCam:s.rCam)&&ok(d.toe[w],fr?s.fToe:s.rToe);
+ if(fr)g=g&&ok(c[w].cas,s.fCas)&&ok(c[w].sai,s.sai);
+ return g;
+}
+function drawTop(c,o){
+ o=o||{};const d=derive(c),X={FL:165,FR:355,RL:165,RR:355},Y={FL:150,FR:150,RL:430,RR:430};
+ let s=sr(120,70,110,440,'#d4d9e4','#9aa3b8',6)+sr(290,70,110,440,'#d4d9e4','#9aa3b8',6)+sr(195,90,130,400,'#eef0f6',INK,50);
+ s+=sl(260,40,260,520,BLUE,1.5,'6 5');
+ s+=sr(215,130,90,60,'#c9d0e0',null,14)+sr(215,400,90,50,'#c9d0e0',null,14);
+ WH.forEach(w=>{
+  const ang=(w==='FL'||w==='RL'?1:-1)*c[w].toe*10,col=o.nostatus?'#555':(statusOf(c,w)?GRN:RED);
+  s+=sg(`rotate(${ang} ${X[w]} ${Y[w]})`,sr(X[w]-17,Y[w]-38,34,76,TYRE,col,6)+sr(X[w]-9,Y[w]-24,18,48,RIM,null,3)+(o.sensors&&o.sensors[w]?sr(w[1]==='L'?X[w]-30:X[w]+16,Y[w]-10,14,20,BLUE,'#fff',3):''));
+  s+=st(w,X[w],Y[w]+60,{c:INK,s:12});
+ });
+ const a=d.thrust*10,e=[260+330*Math.sin(rad(a)),430-330*Math.cos(rad(a))];
+ s+=ar(260,430,e[0],e[1],RED)+st('thrust line',e[0]+6,e[1]+44,{a:'start',c:RED,s:11})+st('centreline',270,34,{a:'start',c:BLUE,s:11,w:400});
+ const swa=d.sw*3;
+ s+=sc(440,60,34,'none',NAVY).replace('stroke-width="1.5"','stroke-width="6"')+sg(`rotate(${swa} 440 60)`,sl(406,60,474,60,NAVY,5)+sl(440,60,440,90,NAVY,5)+sr(436,24,8,12,RED,null,2))+sc(440,60,6,NAVY);
+ s+=st(Math.abs(d.sw)<2?'Steering wheel centred':`Steering wheel ${Math.abs(d.sw).toFixed(1)}\u00b0 ${d.sw>0?'right':'left'}`,440,112,{c:Math.abs(d.sw)<2?GRN:RED,s:12});
+ s+=st('Angles exaggerated \u00d710',80,16,{c:INK,s:11,w:400,a:'start'});
+ return svgw(s,'0 0 520 540');
+}
+function drawViews(c){
+ let s='';const gy=160;
+ const wheel=(cx,cam,sg_)=>{const th=sg_*cam*6;return sg(`rotate(${th} ${cx} ${gy})`,sr(cx-15,gy-72,30,72,TYRE,INK,6)+sr(cx-8,gy-62,16,52,RIM,null,3))+sl(cx,gy-100,cx,gy+6,BLUE,1,'4 4')};
+ s+=sl(0,gy,520,gy,INK,2);
+ s+=st('FRONT VIEW',130,18,{c:INK,s:13})+st('REAR VIEW',390,18,{c:INK,s:13});
+ s+=wheel(60,c.FR.cam,-1)+wheel(200,c.FL.cam,1)+sr(95,70,70,40,NAVY,null,6);
+ s+=st(fa(c.FR.cam),60,184,{c:NAVY,s:13})+st(fa(c.FL.cam),200,184,{c:NAVY,s:13});
+ s+=wheel(320,c.RL.cam,-1)+wheel(460,c.RR.cam,1)+sr(355,70,70,40,NAVY,null,6);
+ s+=st(fa(c.RL.cam),320,184,{c:NAVY,s:13})+st(fa(c.RR.cam),460,184,{c:NAVY,s:13});
+ s+=st('Camber \u00d76',260,200,{c:INK,s:10,w:400});
+ return svgw(s,'0 0 520 205');
+}
+function gauge(val,tgt,tol){const lo=tgt-2.5*tol,p=clamp((val-lo)/(5*tol),0,1)*100;return `<span class="g"><i class="b" style="left:30%;width:40%"></i><i class="p" style="left:${p}%"></i></span>`}
+function cell(val,sp,txt){if(val===null)return '<td>\u2014</td>';const ok=Math.abs(val-sp[0])<=sp[1]+1e-9;return `<td class="${ok?'ok':'bad'}"><b>${txt||fa(val)}</b>${gauge(val,sp[0],sp[1])}</td>`}
+const JIT={};
+function jv(w,k){return JIT[w+k]||0}
+function faultActive(id){return !!(W&&W.job&&W.job.faults[id]&&!W.fixed[id]&&W.stage>=3)}
+function jitterOn(){return faultActive('tie')||faultActive('ball')||faultActive('bear')}
+function tickJitter(){const r=()=>(Math.random()-.5)*.28;JIT.FLtoe=faultActive('tie')?r():0;JIT.FLcam=faultActive('ball')?r():0;JIT.FRcam=faultActive('bear')?r():0;JIT.FRtoe=faultActive('bear')?r()*.8:0}
+function readingsHTML(c,show){
+ const s=VEH[c.v].sp,d=derive(c),J=!!W&&show!=='sb';
+ const j=(w,k)=>J?jv(w,k):0;
+ const sweep=show==='sb'||(W&&W.sweep>=3);
+ let o=`<table class="rd"><tr><th></th><th>Front left</th><th>Front right</th><th>Rear left</th><th>Rear right</th></tr>`;
+ o+=`<tr><td class="rl">Camber</td>${cell(c.FL.cam+j('FL','cam'),s.fCam)}${cell(c.FR.cam+j('FR','cam'),s.fCam)}${cell(c.RL.cam,s.rCam)}${cell(c.RR.cam,s.rCam)}</tr>`;
+ o+=`<tr><td class="rl">Toe (each wheel)</td>${cell(d.toe.FL+j('FL','toe'),s.fToe)}${cell(d.toe.FR+j('FR','toe'),s.fToe)}${cell(d.toe.RL,s.rToe)}${cell(d.toe.RR,s.rToe)}</tr>`;
+ o+=`<tr><td class="rl">Caster</td>${cell(sweep?c.FL.cas:null,s.fCas)}${cell(sweep?c.FR.cas:null,s.fCas)}<td>\u2014</td><td>\u2014</td></tr>`;
+ o+=`<tr><td class="rl">SAI</td>${cell(sweep?c.FL.sai:null,s.sai,fa(c.FL.sai,false))}${cell(sweep?c.FR.sai:null,s.sai,fa(c.FR.sai,false))}<td>\u2014</td><td>\u2014</td></tr>`;
+ o+=`<tr><td class="rl">Included angle</td>${sweep?`<td>${fa(c.FL.sai+c.FL.cam,false)}</td><td>${fa(c.FR.sai+c.FR.cam,false)}</td>`:'<td>\u2014</td><td>\u2014</td>'}<td>\u2014</td><td>\u2014</td></tr>`;
+ const cc=Math.abs(d.cc)<=.75,cs=Math.abs(d.cs)<=.75,th=Math.abs(d.thrust)<=.15,sw=Math.abs(d.sw)<=2;
+ o+=`<tr><td class="rl">Total toe</td><td class="${Math.abs(d.tf-2*s.fToe[0])<=2*s.fToe[1]+1e-9?'ok':'bad'}" colspan="2"><b>Front ${fa(d.tf)}</b></td><td class="${Math.abs(d.tr-2*s.rToe[0])<=2*s.rToe[1]+1e-9?'ok':'bad'}" colspan="2"><b>Rear ${fa(d.tr)}</b></td></tr>`;
+ o+=`<tr><td class="rl">Cross camber / caster</td><td class="${cc?'ok':'bad'}" colspan="2"><b>${fa(d.cc)}</b> (max \u00b10.75\u00b0)</td><td class="${cs?'ok':'bad'}" colspan="2">${sweep?`<b>${fa(d.cs)}</b> (max \u00b10.75\u00b0)`:'\u2014'}</td></tr>`;
+ o+=`<tr><td class="rl">Thrust angle / steering wheel</td><td class="${th?'ok':'bad'}" colspan="2"><b>${fa(d.thrust)}</b> (max \u00b10.15\u00b0)</td><td class="${sw?'ok':'bad'}" colspan="2"><b>${Math.abs(d.sw)<2?'Centred':Math.abs(d.sw).toFixed(1)+'\u00b0 '+(d.sw>0?'right':'left')}</b></td></tr>`;
+ return o+'</table>';
+}
+function wearHTML(c){
+ const w=wearOf(c);let o='<h3>Predicted tyre wear</h3>';
+ WH.forEach(k=>{o+=`<div class="wearbar"><b style="width:28px">${k}</b>Inner <span class="t"><i style="width:${w[k].inn}%"></i></span> Outer <span class="t"><i style="width:${w[k].out}%"></i></span>${w[k].feather?' <b style="color:#c62828">feathering</b>':''}</div>`});
+ return o;
+}
+function feelHTML(c){
+ const d=derive(c);let o='<h3>What the driver would notice</h3><ul class="l">';
+ o+=`<li>${Math.abs(d.pull)<.35?'Tracks straight on a level road':`Pulls to the <b>${d.pull>0?'right':'left'}</b>`}</li>`;
+ o+=`<li>${Math.abs(d.sw)<2?'Steering wheel centred':`Steering wheel <b>${Math.abs(d.sw).toFixed(1)}\u00b0 ${d.sw>0?'right':'left'}</b> when driving straight`}</li>`;
+ if(Math.abs(d.thrust)>.15)o+='<li>Car feels as if it is \u201ccrabbing\u201d \u2013 rear axle not square</li>';
+ return o+'</ul>';
+}
+
+/* ---------- SHOP: jobs ---------- */
+const KINDS={
+ sw:{t:'Steering wheel off-centre',c:'\u201cThe steering wheel sits crooked when I drive in a straight line. The car doesn\u2019t really pull.\u201d',cause:'Unequal individual front toe (total toe can still be in specification)',tip:'The steering wheel is offset when the left and right front toe values are not equal.'},
+ pull:{t:'Pulls to one side',c:'',cause:'More positive camber on the pulling side',tip:'The car pulls towards the side with the more positive camber (and less positive caster).'},
+ rearwear:{t:'Rear tyre wear',c:'\u201cThe rear tyres are worn on the inside edges and the back feels a bit twitchy.\u201d',cause:'Rear toe-out (and excess negative rear camber)',tip:'Inner-edge wear points to toe-out and/or too much negative camber.'},
+ thrust:{t:'Crooked rear axle',c:'\u201cThe steering wheel is off to one side and the car feels like it\u2019s crabbing down the road.\u201d',cause:'Rear thrust angle out of specification',tip:'Unequal rear toe pushes the car sideways. Fix the rear axle before the front.'},
+ bent:{t:'Kerb strike',c:'',cause:'Damaged (bent) steering knuckle or suspension part',tip:'Included angle out of specification cannot be adjusted \u2013 the part must be replaced.'},
+ general:{t:'General alignment check',c:'\u201cIt\u2019s due its yearly alignment check and the tyres are starting to wear unevenly.\u201d',cause:'Several angles drifted out of specification',tip:'Work through the angles in order: rear first, then front.'}
+};
+const ORDERK=['sw','pull','rearwear','thrust','bent','general'];
+function makeJob(vk,kind){
+ const V=VEH[vk],c=specCar(vk),j=n=>rnd(-n,n),s=Math.random()<.5?-1:1;
+ ['FL','FR'].forEach(w=>{c[w].cam+=j(.2);c[w].toe+=j(.04);c[w].cas+=j(.3);c[w].sai+=j(.3)});
+ ['RL','RR'].forEach(w=>{c[w].cam+=j(.2);c[w].toe+=j(.04)});
+ let complaint=KINDS[kind].c;
+ if(kind==='sw'){c.FL.toe+=.35*s;c.FR.toe-=.35*s}
+ else if(kind==='pull'){const w=s>0?'FR':'FL';c[w].cam+=.95+Math.random()*.3;if(V.adj.fCas)c[w].cas-=.6;complaint=`\u201cThe car pulls to the ${s>0?'right':'left'} on a flat road, even with my hands light on the wheel.\u201d`}
+ else if(kind==='rearwear'){c.RL.toe-=.32;c.RR.toe-=.30;if(V.adj.rCam){c.RL.cam-=1.0;c.RR.cam-=.95}}
+ else if(kind==='thrust'){c.RL.toe+=.5*s;c.RR.toe-=.1*s}
+ else if(kind==='bent'){const w=s>0?'FR':'FL';c[w].sai-=2.2;c[w].cam+=1.4;c[w].cas-=.9;complaint=`\u201cI hit a kerb last week and now the car pulls to the ${s>0?'right':'left'}.\u201d`}
+ else{const ps=[['FL','toe','fToe'],['FR','toe','fToe'],['FL','cam','fCam'],['FR','cam','fCam'],['RL','toe','rToe'],['RR','toe','rToe']];
+  if(V.adj.fCas){ps.push(['FL','cas','fCas']);ps.push(['FR','cas','fCas'])}if(V.adj.rCam){ps.push(['RL','cam','rCam']);ps.push(['RR','cam','rCam'])}
+  shuffle(ps).slice(0,3).forEach(p=>{c[p[0]][p[1]]+=(Math.random()<.5?-1:1)*V.sp[p[2]][1]*rnd(1.8,2.6)})}
+ WH.forEach(w=>{Object.keys(c[w]).forEach(k=>{c[w][k]=r2(c[w][k])})});
+ const faults={};
+ if(kind!=='bent'&&Math.random()<.5)faults[pick(['press','tie','ball','bear'])]=true;
+ return{kind,side:s,car:c,faults,complaint};
+}
+const FAULTMSG={press:'Front right tyre is at 1.4 bar (specification 2.3 bar). Uneven pressure upsets ride height and causes a pull.',tie:'Front left outer tie-rod end has free play \u2013 toe readings will be unstable.',ball:'Front left lower ball joint has vertical play \u2013 camber readings will be unstable.',bear:'Front right wheel bearing has play when rocked \u2013 camber and toe readings will be unstable.'};
+const INSP=[
+ {id:'press',n:'Tyre pressures',ok:'All four tyres at 2.3 bar \u2013 correct.',fix:'Inflate to 2.3 bar'},
+ {id:'wear',n:'Tyre condition and wear pattern',info:1},
+ {id:'wheel',n:'Wheels and rims',ok:'Rims straight, no damage, correct size on all four corners.',info:1},
+ {id:'bear',n:'Wheel bearings',ok:'No play felt when each wheel is rocked.',fix:'Replace the wheel bearing'},
+ {id:'tie',n:'Steering tie-rod ends',ok:'No free play in any tie-rod end.',fix:'Replace the tie-rod end'},
+ {id:'ball',n:'Ball joints and suspension bushes',ok:'No play in any ball joint; bushes in good condition.',fix:'Replace the ball joint'},
+ {id:'ride',n:'Ride height and vehicle load',ok:'Boot empty, fuel level normal. Ride height within 5 mm left to right.',info:1},
+ {id:'steer',n:'Steering play',ok:'Free play at the steering wheel is within limits.',info:1}
+];
+function newJob(kind,vk){
+ const k=(kind&&kind!=='rand')?kind:pick(ORDERK);
+ const job=makeJob(vk||ST.veh,k);
+ W={job,car:job.car,stage:0,insp:{},fixed:{},sensors:{FL:0,FR:0,RL:0,RR:0},comp:0,hold:0,sweep:0,quiz:null,diag:null,adjusts:0,flag:null,flagMsg:'',wrongFlag:false,before:null,report:null};
+ JIT.FLtoe=JIT.FLcam=JIT.FRcam=JIT.FRtoe=0;
+}
+const STAGES=['Job card','Inspect','Set up','Measure','Adjust','Report'];
+function diagOpts(job){
+ const all=['Unequal individual front toe (total toe still in specification)','More positive camber on one front wheel','Rear toe-out and excess negative rear camber','Rear thrust angle out of specification','A bent steering knuckle / suspension part (included angle out)','Low tyre pressure only','Excess total front toe-in','Too little caster on both sides'];
+ const map={sw:0,pull:1,rearwear:2,thrust:3,bent:4};
+ const right=job.kind==='general'?'Several angles out of specification \u2013 do a full check':all[map[job.kind]];
+ const wrong=shuffle(all.filter(x=>x!==right)).slice(0,3);
+ return{right,opts:shuffle([right].concat(wrong))};
+}
+
+/* ---------- SHOP: render ---------- */
+function stageBar(){return `<div class="steps">${STAGES.map((s,i)=>`<span class="${i===W.stage?'on':(i<W.stage?'past':'')}">${i+1}. ${s}</span>`).join('')}</div>`}
+function setupDone(){return WH.every(w=>W.sensors[w])&&W.comp&&W.hold&&W.sweep>=3}
+function panelBrief(){
+ const j=W.job;
+ return `<h2>Job card</h2><p><b>Vehicle:</b> ${VEH[j.car.v].name}</p><div class="live"><b>Customer complaint</b><br>${j.complaint}</div>
+ <p>Your job: carry out a full four-wheel alignment \u2013 <b>inspect</b> the vehicle, <b>set up</b> the aligner, <b>measure</b>, <b>diagnose</b>, <b>adjust</b> and check the result.</p>
+ <div class="btns"><button class="btn" data-act="next">Start: inspect the vehicle \u2192</button></div>
+ <h3>Choose a vehicle</h3><div class="btns">${Object.keys(VEH).map(k=>`<button class="btn ${k===j.car.v?'':'ghost'} sm" data-act="veh" data-v="${k}">${VEH[k].name}</button>`).join('')}</div>
+ <details><summary>Instructor: choose the fault type</summary><div class="btns"><button class="btn ghost sm" data-act="kind" data-v="rand">Random</button>${ORDERK.map(k=>`<button class="btn ghost sm" data-act="kind" data-v="${k}">${KINDS[k].t}</button>`).join('')}</div></details>`;
+}
+function panelInspect(){
+ const n=Object.keys(W.insp).length;
+ let o=`<h2>Pre-alignment inspection</h2><p>Never align a vehicle with worn or damaged parts. Check every item and put right any faults <b>before</b> measuring. (${n}/${INSP.length} checked)</p>`;
+ INSP.forEach(it=>{
+  const f=W.job.faults[it.id],done=W.insp[it.id];
+  if(!done){o+=`<div class="ins"><b>${it.n}</b> <button class="btn sm" data-act="insp" data-v="${it.id}">Inspect</button></div>`;return}
+  let msg,cls='ok';
+  if(f){cls=W.fixed[it.id]?'ok':'bad';msg=W.fixed[it.id]?'Repaired \u2013 now correct.':FAULTMSG[it.id]}
+  else if(it.id==='wear'){const w=wearOf(W.car);const worst=WH.map(k=>[k,w[k].inn,w[k].out]).sort((a,b)=>Math.max(b[1],b[2])-Math.max(a[1],a[2]))[0];msg=Math.max(worst[1],worst[2])>25?`Uneven wear visible \u2013 worst on ${WN[worst[0]]}, ${worst[1]>worst[2]?'inner':'outer'} edge.`:'Even wear, good tread depth on all four tyres.'}
+  else if(it.id==='steer'&&W.job.faults.tie&&!W.fixed.tie){msg='Slight extra free play felt \u2013 check the tie-rod ends.';cls='bad'}
+  else msg=it.ok;
+  o+=`<div class="ins ${cls}"><b>${it.n}</b><br>${msg}${f&&!W.fixed[it.id]?` <button class="btn sm" data-act="fix" data-v="${it.id}">${it.fix}</button>`:''}</div>`;
+ });
+ return o+`<div class="btns"><button class="btn" data-act="next">Next: set up the aligner \u2192</button></div>`;
+}
+function panelSetup(){
+ let o=`<h2>Set up the aligner</h2><p>Work through the steps in order.</p>`;
+ o+=`<div class="ins ${WH.every(w=>W.sensors[w])?'ok':''}"><b>1. Fit the wheel sensors</b><div class="btns">${WH.map(w=>`<button class="btn sm ${W.sensors[w]?'done':''}" data-act="sensor" data-v="${w}">${WN[w]} ${W.sensors[w]?'\u2714':''}</button>`).join('')}</div></div>`;
+ o+=`<div class="ins ${W.comp?'ok':''}"><b>2. Runout compensation</b><br><span class="small">Roll the car back and forward so the aligner removes rim and sensor runout.</span><div class="btns"><button class="btn sm" data-act="comp" ${WH.every(w=>W.sensors[w])&&!W.comp?'':'disabled'}>${W.comp?'\u2714 Done':'Roll car back and forward'}</button></div></div>`;
+ o+=`<div class="ins ${W.hold?'ok':''}"><b>3. Brake pedal depressor and steering wheel holder</b><br><span class="small">Stops the car rolling and holds the steering wheel straight.</span><div class="btns"><button class="btn sm" data-act="hold" ${W.comp&&!W.hold?'':'disabled'}>${W.hold?'\u2714 Fitted':'Fit both'}</button></div></div>`;
+ const sw=['Turn wheels left 20\u00b0','Turn wheels right 20\u00b0','Return to straight ahead'];
+ o+=`<div class="ins ${W.sweep>=3?'ok':''}"><b>4. Caster sweep</b><br><span class="small">Steering the wheels \u00b120\u00b0 lets the aligner calculate caster and SAI.</span><div class="btns">${sw.map((t,i)=>`<button class="btn sm ${W.sweep>i?'done':''}" data-act="sweep" data-v="${i}" ${W.hold&&W.sweep===i?'':'disabled'}>${W.sweep>i?'\u2714 ':''}${t}</button>`).join('')}</div></div>`;
+ return o+`<div class="btns"><button class="btn" data-act="next" ${setupDone()?'':'disabled'}>Next: take measurements \u2192</button></div>`;
+}
+function panelMeasure(){
+ const q=W.quiz;let o=`<h2>Measure and diagnose</h2><p>Study the readings (green = in specification). Then decide what is causing the complaint.</p><div class="live"><b>Complaint</b><br>${W.job.complaint}</div>`;
+ if(jitterOn())o+=`<div class="warnbox"><b>Readings are unstable</b> \u2013 a worn component is moving while the aligner reads. Check the steering and suspension again.</div>`;
+ o+=`<h3>What is the most likely cause?</h3>`;
+ const D=W.diag||(W.diag=diagOpts(W.job));
+ D.opts.forEach((t,i)=>{const cls=q===null?'':(t===D.right?'right':(q===i?'wrong':''));o+=`<button class="opt ${cls}" data-act="diag" data-v="${i}" ${q!==null?'disabled':''}>${t}</button>`});
+ if(q!==null)o+=`<div class="${D.opts[q]===D.right?'okbox':'warnbox'}">${D.opts[q]===D.right?'<b>Correct.</b> ':'<b>Not quite.</b> The most likely cause is: '+D.right+'. '}${KINDS[W.job.kind].tip}</div>`;
+ return o+`<div class="btns"><button class="btn" data-act="next" ${q!==null?'':'disabled'}>Next: adjust \u2192</button></div>`;
+}
+function adjRow(key,lab,w,val,spec){
+ const V=VEH[W.car.v],can=V.adj[key],ok=Math.abs(val-spec[0])<=spec[1]+1e-9;
+ const b=(d,t)=>`<button class="btn sm ghost" data-act="adj" data-k="${key}" data-w="${w}" data-d="${d}" ${can?'':'disabled'}>${t}</button>`;
+ return `<div class="row ${can?'':'na'}"><div><b>${lab}</b><div class="how">${V.how[key]}</div></div><div class="v ${can?(ok?'ok':'bad'):''}">${fa(val)}</div><div>${b(-.25,'\u22120.25')}${b(-.05,'\u22120.05')}${b(.05,'+0.05')}${b(.25,'+0.25')}</div></div>`;
+}
+function panelAdjust(){
+ const c=W.car,d=derive(c),s=VEH[c.v].sp;
+ let o=`<h2>Adjust</h2><p>Order matters: <b>rear axle first</b> (camber, then toe), then front (caster, camber, <b>toe last</b>). Changing one angle can move another.</p>`;
+ o+='<h3>Rear axle</h3>'+adjRow('rCam','Rear left camber','RL',c.RL.cam,s.rCam)+adjRow('rCam','Rear right camber','RR',c.RR.cam,s.rCam)+adjRow('rToe','Rear left toe','RL',c.RL.toe,s.rToe)+adjRow('rToe','Rear right toe','RR',c.RR.toe,s.rToe);
+ o+='<h3>Front axle</h3>'+adjRow('fCas','Front left caster','FL',c.FL.cas,s.fCas)+adjRow('fCas','Front right caster','FR',c.FR.cas,s.fCas)+adjRow('fCam','Front left camber','FL',c.FL.cam,s.fCam)+adjRow('fCam','Front right camber','FR',c.FR.cam,s.fCam)+adjRow('fToe','Front left toe','FL',d.toe.FL,s.fToe)+adjRow('fToe','Front right toe','FR',d.toe.FR,s.fToe);
+ o+=`<h3>Damaged parts</h3><p class="small">If SAI / included angle is out of specification no adjustment will fix it \u2013 replace the part.</p><div class="btns"><button class="btn sm ghost" data-act="flag" data-v="FL" ${W.flag?'disabled':''}>Replace front left suspension part</button><button class="btn sm ghost" data-act="flag" data-v="FR" ${W.flag?'disabled':''}>Replace front right suspension part</button></div>`;
+ if(W.flag)o+=`<div class="${W.flag==='ok'?'okbox':'warnbox'}">${W.flagMsg}</div>`;
+ const iss=evalCar(c);
+ o+=iss.length?`<div class="warnbox"><b>Still out of specification:</b> ${iss.join(', ')}.</div>`:`<div class="okbox"><b>All readings are in specification.</b></div>`;
+ return o+`<div class="btns"><button class="btn" data-act="next">Finish and view the report \u2192</button></div>`;
+}
+function computeReport(){
+ const c=W.car,iss=evalCar(c),insp=Object.keys(W.insp).length,un=Object.keys(W.job.faults).filter(f=>!W.fixed[f]);
+ const bent=W.job.kind==='bent';
+ const P={inspect:Math.round(15*insp/INSP.length),setup:10,diag:(W.quiz!==null&&W.diag&&W.diag.opts[W.quiz]===W.diag.right)?15:0,
+  align:Math.round(40*(1-Math.min(iss.length,8)/8)),dmg:(bent?(W.flag==='ok'?10:0):(W.wrongFlag?0:10)),eff:W.adjusts<=30?10:(W.adjusts<=50?6:3)};
+ const pen=un.length*15;
+ const tot=clamp(P.inspect+P.setup+P.diag+P.align+P.dmg+P.eff-pen,0,100);
+ let best=0;try{best=Number(localStorage.getItem('hfa-align-best')||0)}catch(e){}
+ if(tot>best){try{localStorage.setItem('hfa-align-best',String(tot))}catch(e){}}
+ W.report={P,pen,tot,iss,un,best:Math.max(best,tot)};return W.report;
+}
+function panelReport(){
+ const R=W.report||computeReport(),c=W.car,d=derive(c);
+ let o=`<h2>Alignment report</h2><div class="score">${R.tot}/100</div><p class="small">Best on this device: ${R.best}</p>`;
+ o+=R.iss.length?`<div class="warnbox"><b>Not in specification:</b> ${R.iss.join(', ')}.</div>`:`<div class="okbox"><b>All angles within specification.</b> Road test: ${Math.abs(d.pull)<.35?'tracks straight':'pulls'}, steering wheel ${Math.abs(d.sw)<2?'centred':'off-centre'}.</div>`;
+ if(R.un.length)o+=`<div class="warnbox"><b>Worn parts not repaired:</b> ${R.un.map(f=>FAULTMSG[f]).join(' ')} The alignment will not hold \u2013 \u221215 each.</div>`;
+ o+=`<h3>Score breakdown</h3><ul class="l"><li>Inspection: ${R.P.inspect}/15</li><li>Aligner set-up: ${R.P.setup}/10</li><li>Diagnosis: ${R.P.diag}/15</li><li>Alignment result: ${R.P.align}/40</li><li>Damaged-part decision: ${R.P.dmg}/10</li><li>Efficiency (${W.adjusts} adjustments): ${R.P.eff}/10</li>${R.pen?`<li>Penalty: \u2212${R.pen}</li>`:''}</ul>`;
+ o+=`<h3>Cause of the complaint</h3><p><b>${KINDS[W.job.kind].t}:</b> ${KINDS[W.job.kind].cause}.</p>`;
+ return o+`<div class="btns noprint"><button class="btn" data-act="newjob">New job</button><button class="btn ghost" data-act="print">Print report</button></div>`;
+}
+function renderShop(){
+ if(!W)newJob();
+ const c=W.car;
+ const left=`<div class="card"><h2 style="margin-bottom:0">${VEH[c.v].name}</h2><div class="dia">${drawTop(c,{sensors:W.sensors,nostatus:W.stage<3})}</div><div class="dia" style="margin-top:8px">${drawViews(c)}</div></div>`;
+ const right=`${stageBar()}<div class="card">${[panelBrief,panelInspect,panelSetup,panelMeasure,panelAdjust,panelReport][W.stage]()}</div>`;
+ let under='';
+ if(W.stage>=3)under=`<div class="card" style="margin-top:12px"><h3 style="margin-top:0">Aligner readings</h3><div id="shRead">${readingsHTML(c,true)}</div>${W.stage>=4?`<div class="two"><div>${wearHTML(c)}</div><div>${feelHTML(c)}</div></div>`:''}</div>`;
+ $('#main').innerHTML=`<div class="two"><div>${left}${under}</div><div>${right}</div></div>`;
+}
+
+/* ---------- SANDBOX ---------- */
+const SBS=[['FL','cam','Front left camber',-3,3,.05],['FR','cam','Front right camber',-3,3,.05],['FL','cas','Front left caster',-1,8,.05],['FR','cas','Front right caster',-1,8,.05],['FL','toe','Front left toe (to centreline)',-1,1,.01],['FR','toe','Front right toe (to centreline)',-1,1,.01],['RL','cam','Rear left camber',-3,3,.05],['RR','cam','Rear right camber',-3,3,.05],['RL','toe','Rear left toe',-1,1,.01],['RR','toe','Rear right toe',-1,1,.01],['FL','sai','Front left SAI',8,18,.05],['FR','sai','Front right SAI',8,18,.05]];
+function renderSandbox(){
+ if(!SB)SB=specCar('hatch');const c=SB;
+ $('#main').innerHTML=`<div class="two"><div><div class="card"><h2>Free play \u2013 see what each angle does</h2><p>Move any slider and watch the car, the readings, the predicted tyre wear and what the driver would notice. Toe sliders are measured to the centreline; the aligner shows front toe relative to the thrust line.</p>
+ <div class="btns"><button class="btn" data-act="sbreset">Reset to specification</button><button class="btn ghost" data-act="sbrand">Random fault</button>${Object.keys(VEH).map(k=>`<button class="btn ghost sm" data-act="sbveh" data-v="${k}">${VEH[k].name}</button>`).join('')}</div>
+ <div class="dia" id="sbTop">${drawTop(c,{})}</div><div class="dia" id="sbViews" style="margin-top:8px">${drawViews(c)}</div></div></div>
+ <div><div class="card"><div class="sliders">${SBS.map(s=>`<label>${s[2]}<span id="sbv_${s[0]}${s[1]}">${c[s[0]][s[1]].toFixed(2)}</span></label><input type="range" data-sb="${s[0]}.${s[1]}" min="${s[3]}" max="${s[4]}" step="${s[5]}" value="${c[s[0]][s[1]]}" aria-label="${s[2]}">`).join('')}</div></div>
+ <div class="card" style="margin-top:12px"><div id="sbRead">${readingsHTML(c,'sb')}</div><div id="sbWear">${wearHTML(c)}</div><div id="sbFeel">${feelHTML(c)}</div></div></div></div>`;
+}
+function sbUpdate(){
+ const c=SB;$('#sbTop').innerHTML=drawTop(c,{});$('#sbViews').innerHTML=drawViews(c);$('#sbRead').innerHTML=readingsHTML(c,'sb');$('#sbWear').innerHTML=wearHTML(c);$('#sbFeel').innerHTML=feelHTML(c);
+ SBS.forEach(s=>{const e=$('#sbv_'+s[0]+s[1]);if(e)e.textContent=c[s[0]][s[1]].toFixed(2)});
+}
+
+/* ---------- QUIZ ---------- */
+const QB=[
+ ['The car pulls to the right on a level road with equal tyre pressures. Which difference is the most likely cause?',['More positive camber on the right front wheel','More positive camber on the left front wheel','Equal caster on both sides','Too much total toe-in'],0,'A car pulls towards the side with the more positive camber.'],
+ ['Which angle is seen from the side of the car and gives the steering its self-centring and stability?',['Caster','Camber','Toe','Setback'],0,'Caster tilts the steering axis rearwards like a shopping-trolley castor.'],
+ ['Wear on only the inner edge of a rear tyre points to:',['Too much negative camber and/or toe-out','Too much positive camber','Under-inflation only','Too little caster'],0,'Negative camber and toe-out both load or scrub the inner shoulder.'],
+ ['Feathered tread wear across the tyre points to:',['Incorrect toe','Incorrect caster','A bent exhaust','Worn shock absorbers only'],0,'Toe makes the tyre scrub sideways, creating the feather edge.'],
+ ['Included angle is:',['SAI + camber','Caster + toe','Camber \u2212 toe','Toe-in + setback'],0,'It stays constant when camber is adjusted, so it helps detect bent parts.'],
+ ['The steering wheel is off-centre, the car drives straight and total toe is correct. What is wrong?',['Unequal individual front toe','Excess caster','Low tyre pressure','Too much camber'],0,'Equal total toe can still be split unevenly between the two front wheels.'],
+ ['What must you check before measuring alignment?',['Tyre pressures and worn steering / suspension parts','Only the wheel nuts','Only the brake fluid','Nothing \u2013 start measuring'],0,'Worn parts and wrong pressures give false readings and the alignment will not hold.'],
+ ['The thrust angle describes:',['The direction the rear axle points relative to the centreline','The angle of the front springs','The tilt of the steering wheel','The toe of the front wheels'],0,'It comes from the rear toe values.'],
+ ['Which angle cannot normally be adjusted, and points to damage if out of specification?',['SAI / included angle','Front toe','Rear toe','Front camber (cam bolt)'],0,'SAI is set by the geometry of the parts.'],
+ ['Why is runout compensation carried out?',['To remove the effect of rim and sensor runout from the readings','To warm up the tyres','To set tyre pressures','To lock the steering'],0,'Rolling the car lets the aligner calculate and cancel the runout.'],
+ ['\u201cToe-out on turns\u201d means:',['The inside front wheel steers more than the outside wheel','Both wheels steer the same amount','The rear wheels steer','The tyres point outwards when parked'],0,'Ackermann geometry lets all wheels roll around one centre.'],
+ ['Which order is recommended?',['Rear axle first, then front: caster, camber, toe','Front toe first, then rear','Front camber then front toe only','Any order'],0,'Rear first because the thrust line is the reference for the front. Toe is last because other adjustments move it.'],
+ ['Excess toe-in usually wears:',['The outer edges of the tread','The centre only','The inner edges only','Nothing'],0,'Toe-in scrubs the outer edges; toe-out wears the inner edges.']
+];
+function newQuiz(){ST.quiz={qs:shuffle(QB).slice(0,8).map(q=>{const idx=shuffle([0,1,2,3]);return{q:q[0],o:idx.map(i=>q[1][i]),a:idx.indexOf(0),w:q[3]}}),i:0,score:0,ans:null}}
+function renderQuiz(){
+ if(!ST.quiz)newQuiz();const Q=ST.quiz;
+ if(Q.i>=Q.qs.length){$('#main').innerHTML=`<div class="card"><h2>Quiz complete</h2><div class="score">${Q.score}/${Q.qs.length}</div><p>${Q.score>=7?'Excellent \u2013 you know your alignment angles.':(Q.score>=5?'Good \u2013 revisit the topics you missed in Learn.':'Go through the Learn section again, then retry.')}</p><div class="btns"><button class="btn" data-act="newquiz">Try again</button><button class="btn ghost" data-act="tab" data-v="learn">Back to Learn</button></div></div>`;return}
+ const q=Q.qs[Q.i];
+ $('#main').innerHTML=`<div class="card" style="max-width:820px;margin:auto"><h2>Question ${Q.i+1} of ${Q.qs.length}</h2><p style="font-size:1.05rem"><b>${q.q}</b></p>${q.o.map((t,i)=>`<button class="opt ${Q.ans===null?'':(i===q.a?'right':(i===Q.ans?'wrong':''))}" data-act="qans" data-v="${i}" ${Q.ans!==null?'disabled':''}>${t}</button>`).join('')}${Q.ans!==null?`<div class="${Q.ans===q.a?'okbox':'warnbox'}"><b>${Q.ans===q.a?'Correct.':'Not quite.'}</b> ${q.w}</div><div class="btns"><button class="btn" data-act="qnext">${Q.i+1<Q.qs.length?'Next question':'See result'}</button></div>`:''}<p class="small">Score so far: ${Q.score}</p></div>`;
+}
+
+/* ---------- navigation + actions ---------- */
+function renderTabs(){
+ const T=[['learn','1. Learn the angles'],['shop','2. Alignment rack \u2013 practise a job'],['sandbox','3. Free play'],['quiz','4. Quiz']];
+ $('#tabs').innerHTML=T.map(t=>`<button role="tab" data-act="tab" data-v="${t[0]}" aria-selected="${ST.tab===t[0]}">${t[1]}</button>`).join('');
+ $('#dmBtn').textContent=ST.dm?'Angles: degrees-minutes':'Angles: decimal degrees';
+}
+function render(){renderTabs();({learn:renderLearn,shop:renderShop,sandbox:renderSandbox,quiz:renderQuiz})[ST.tab]()}
+function doAdj(k,w,d){
+ const c=W.car;if(!VEH[c.v].adj[k]){toast('Not adjustable on this vehicle');return}
+ if(k==='fToe')c[w].toe+=d;
+ else if(k==='fCam'){c[w].cam+=d;c[w].toe+=d*.15}
+ else if(k==='fCas'){c[w].cas+=d;c[w].cam+=d*.25}
+ else if(k==='rCam'){c[w].cam+=d;c[w].toe+=d*.2}
+ else if(k==='rToe')c[w].toe+=d;
+ WH.forEach(x=>{Object.keys(c[x]).forEach(p=>{c[x][p]=clamp(r2(c[x][p]),-6,20)})});
+ W.adjusts++;
+}
+function act(a,v,el){
+ const ds=el&&el.dataset?el.dataset:{};
+ switch(a){
+  case'tab':ST.tab=v;render();break;
+  case'dm':ST.dm=!ST.dm;render();break;
+  case'topic':ST.topic=v;renderLearn();break;
+  case'veh':ST.veh=v;newJob(ST.kind,v);render();break;
+  case'kind':ST.kind=v;newJob(v,W.car.v);render();break;
+  case'next':if(W.stage===2&&!setupDone())break;if(W.stage===3&&W.quiz===null)break;if(W.stage<5){W.stage++;if(W.stage===3&&!W.before)W.before=JSON.parse(JSON.stringify(W.car));if(W.stage===5)computeReport();render()}break;
+  case'insp':W.insp[v]=1;render();break;
+  case'fix':W.fixed[v]=true;toast('Repaired');render();break;
+  case'sensor':W.sensors[v]=1;render();break;
+  case'comp':if(WH.every(w=>W.sensors[w])){W.comp=1;render()}break;
+  case'hold':if(W.comp){W.hold=1;render()}break;
+  case'sweep':if(W.hold&&W.sweep===Number(v)){W.sweep++;render()}break;
+  case'diag':if(W.quiz===null){W.quiz=Number(v);render()}break;
+  case'adj':doAdj(ds.k,ds.w,Number(ds.d));renderShop();break;
+  case'flag':{const bent=W.job.kind==='bent',w=v;
+    if(bent&&w===(W.job.side>0?'FR':'FL')){const s=VEH[W.car.v].sp;W.car[w].sai=s.sai[0];W.car[w].cam=r2(s.fCam[0]+.5);W.car[w].cas=r2(s.fCas[0]-.3);W.flag='ok';W.flagMsg='Part replaced \u2013 SAI and included angle are now correct. The wheel still needs adjusting.'}
+    else{W.flag='bad';W.wrongFlag=true;W.flagMsg=bent?'That was the wrong side \u2013 the damaged part is on the side that pulls.':'No damage found \u2013 the included angle was within specification. Unnecessary parts replaced.'}
+    render();break}
+  case'newjob':newJob(ST.kind,ST.veh);render();break;
+  case'print':if(window.print)window.print();break;
+  case'sbreset':SB=specCar(SB.v);renderSandbox();break;
+  case'sbveh':SB=specCar(v);renderSandbox();break;
+  case'sbrand':{SB=specCar(SB.v);const ps=[['FL','cam'],['FR','cam'],['FL','cas'],['FR','cas'],['FL','toe'],['FR','toe'],['RL','toe'],['RR','toe'],['RL','cam'],['RR','cam']];
+    shuffle(ps).slice(0,3).forEach(p=>{SB[p[0]][p[1]]=r2(SB[p[0]][p[1]]+(Math.random()<.5?-1:1)*rnd(.4,1))});renderSandbox();break}
+  case'qans':{const Q=ST.quiz;if(Q.ans===null){Q.ans=Number(v);if(Q.ans===Q.qs[Q.i].a)Q.score++;renderQuiz()}break}
+  case'qnext':ST.quiz.i++;ST.quiz.ans=null;renderQuiz();break;
+  case'newquiz':newQuiz();renderQuiz();break;
+ }
+}
+document.addEventListener('click',e=>{const el=e.target.closest('[data-act]');if(!el||el.disabled)return;e.preventDefault();act(el.dataset.act,el.dataset.v,el)});
+document.addEventListener('input',e=>{
+ const d=e.target.dataset||{};
+ if(d.sl!==undefined){const t=TOPICS.find(x=>x.id===ST.topic);ST.tv[t.id+d.sl]=parseFloat(e.target.value);learnUpdate()}
+ else if(d.sb!==undefined){const p=d.sb.split('.');SB[p[0]][p[1]]=parseFloat(e.target.value);sbUpdate()}
+});
+setInterval(()=>{if(ST.tab==='shop'&&W&&jitterOn()&&$('#shRead')){tickJitter();$('#shRead').innerHTML=readingsHTML(W.car,true)}},900);
+window.__T={ST,act,render,newJob,getW:()=>W,getSB:()=>SB,evalCar,derive,TOPICS,DRAW,INFO,readingsHTML,wearHTML,tickJitter,VEH,KINDS,specCar};
+render();
+})();
+</script>
+</body>
+</html>
